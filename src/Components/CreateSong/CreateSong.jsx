@@ -32,25 +32,26 @@ const CreateSong = (props) => {
 
     return (  
 
+    //self note: in the label 'for' my browser inspector gave a Warning Error and recommended changing 'for' to 'htmlFor'
     <form onSubmit = {handleSubmit}>
         <div>
-            <label for = 'Title'>Title</label>
+            <label htmlFor = 'Title'>Title</label>
             <input type = 'text' id = 'Title' placeholder = 'Song Title' value={songTitle} onChange={(event) => setTitle(event.target.value)}/> 
         </div>
         <div>
-            <label for = 'Artist'>Artist</label>
+            <label htmlFor = 'Artist'>Artist</label>
             <input type = 'text' id = 'Artist' placeholder = 'Artist Name' value = {songArtist} onChange={(event) => setArtist(event.target.value)}/>
         </div>
         <div>
-            <label for = 'Album'>Album</label>
+            <label htmlFor = 'Album'>Album</label>
             <input type = 'text' id = 'Album' placeholder = 'Album title' value={songAlbum} onChange={(event) => setAlbum(event.target.value)}/> 
         </div>
         <div>
-            <label for = 'Release'>Release Date</label>
+            <label htmlFor = 'Release'>Release Date</label>
             <input type = 'text' id = 'Release' placeholder = 'Release Date' value = {releaseDate} onChange={(event) => setReleaseDate(event.target.value)}/>
         </div>
         <div>
-            <label for = 'Genre'>Genre</label>
+            <label htmlFor = 'Genre'>Genre</label>
             <input type = 'text' id = 'Genre' placeholder = 'Genre' value = {songGenre} onChange={(event) => setGenre(event.target.value)}/>
         </div>
         <button type = 'submit'>Submit</button> 

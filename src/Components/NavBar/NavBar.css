@@ -1,0 +1,29 @@
+.nav-background {
+  background-color: black;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-list {
+  list-style: none;
+  display: inline-block;
+  padding: 0px 10px;
+}
+
+.powered-by {
+  color: white;
+  font-size: smaller;
+  font-weight: bold;
+}
+
+.musiclib-logo {
+  color: white;
+}
+
+.navbar-image {
+  height: 34px;
+  padding-right: 1.5rem;
+}
