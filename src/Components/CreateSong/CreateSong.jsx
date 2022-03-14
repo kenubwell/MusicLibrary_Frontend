@@ -10,22 +10,25 @@ const CreateSong = (props) => {
     const [songGenre, setGenre] = useState(''); 
 
 
+
     function handleSubmit(event){
         event.preventDefault(); //this prevents the page from refreshing when the submit button is pressed
         let newSong = {
-            songTitle: songTitle,
-            songArtist: songArtist,
-            songAlbum: songAlbum,
-            releaseDate: releaseDate,
-            songGenre: songGenre
+            "title": songTitle,
+            "artist": songArtist,
+            "album": songAlbum,
+            "release_date": releaseDate,
+            "genre": songGenre
         }
         
         props.addNewSong(newSong);
+        
         setTitle(""); //this is to clear the text that was entered in the form
         setArtist(""); 
         setAlbum(""); 
-        setReleaseDate(""); 
-        setGenre(""); 
+        setReleaseDate("");  
+        setGenre("");
+
     }
 
 
@@ -49,11 +52,12 @@ const CreateSong = (props) => {
             <label htmlFor = 'Release'>Release Date</label>
             <input type = 'date' id = 'Release' placeholder = 'Release Date' value = {releaseDate} onChange={(event) => setReleaseDate(event.target.value)}/>
         </div>
-        <div>
             <label htmlFor = 'Genre'>Genre</label>
             <input type = 'text' id = 'Genre' placeholder = 'Genre' value = {songGenre} onChange={(event) => setGenre(event.target.value)}/>
+        <div>
+
         </div>
-        <button type = 'submit'>Submit</button> 
+        <button type = 'submit'>Add Song</button> 
     </form>
     );
 }
