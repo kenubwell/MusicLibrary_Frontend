@@ -19,9 +19,8 @@ const CreateSong = (props) => {
             releaseDate: releaseDate,
             songGenre: songGenre
         }
-
-        console.log(newSong); //TODO: remove later
-        //props.addNewSong(newSong);
+        
+        props.addNewSong(newSong);
         setTitle(""); //this is to clear the text that was entered in the form
         setArtist(""); 
         setAlbum(""); 
@@ -48,7 +47,7 @@ const CreateSong = (props) => {
         </div>
         <div>
             <label htmlFor = 'Release'>Release Date</label>
-            <input type = 'text' id = 'Release' placeholder = 'Release Date' value = {releaseDate} onChange={(event) => setReleaseDate(event.target.value)}/>
+            <input type = 'date' id = 'Release' placeholder = 'Release Date' value = {releaseDate} onChange={(event) => setReleaseDate(event.target.value)}/>
         </div>
         <div>
             <label htmlFor = 'Genre'>Genre</label>
