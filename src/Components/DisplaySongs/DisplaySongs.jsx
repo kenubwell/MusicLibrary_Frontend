@@ -8,12 +8,12 @@ const DisplaySongs = (props) => {
     return (  
     <div className = 'display-container'>
         <div className='table-title'>
-            <div>
+            <div className ='library-contain'>
                 <h2 className='library-title'>Song Library</h2>
             </div>
             <div className = 'search-filter'>
-                <label>Filter Library</label>
-                <input type='text' placeholder="Search...(e.g. Pop music)" onChange={(event) => setSearchTerm(event.target.value)}/>
+                <label className='search-label'>Filter Music Library:</label>
+                <input type='text' className='custom-input' placeholder="Search...(e.g. Pop music)" onChange={(event) => setSearchTerm(event.target.value)}/>
             </div>
         </div>
         <table className='song-table table'>

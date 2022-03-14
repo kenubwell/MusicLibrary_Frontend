@@ -8,7 +8,7 @@ const NavBar = () => {
     <div className ="nav-background">
         <nav>
             <li className = "navbar-list"><h7 className = "powered-by">Powered By:</h7></li>
-            <li className = "navbar-list"><a href="https://reactjs.org/" target="_blank"><FaReact color = 'darkturquoise' size = '2rem'/></a></li>
+            <li className = "navbar-list"><a href="https://reactjs.org/" target="_blank"><FaReact color = 'darkturquoise' size = '2.5rem'/></a></li>
             <li className = "navbar-list"><a href="https://www.djangoproject.com/" target="_blank"><SiDjango color = 'white' size = '2rem'/></a></li>
             <li className = "navbar-list"><a href="https://www.mysql.com/" target="_blank"><SiMysql color = 'white' size = '3rem'/></a></li>
         </nav>
