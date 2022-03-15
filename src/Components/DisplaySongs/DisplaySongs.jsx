@@ -9,10 +9,10 @@ const DisplaySongs = (props) => {
     <div className = 'display-container'>
         <div className='table-title'>
             <div className ='library-contain'>
-                <h2 className='library-title'>Song Library</h2>
+                <h2 className='library-title'>Song List</h2>
             </div>
             <div className = 'search-filter'>
-                <label className='search-label'>Filter Music Library:</label>
+                <label className='search-label'>Filter Song List:</label>
                 <input type='text' className='custom-input' placeholder="Search...(e.g. Pop music)" onChange={(event) => setSearchTerm(event.target.value)}/>
             </div>
         </div>
@@ -24,6 +24,7 @@ const DisplaySongs = (props) => {
                 <th>Album</th>            
                 <th>Release Date</th>
                 <th>Genre</th>
+                <th>Option(s)</th>
             </tr>
         </thead>
         <tbody>
@@ -43,6 +44,7 @@ const DisplaySongs = (props) => {
                     <td>{song.album}</td>
                     <td>{song.release_date}</td>
                     <td>{song.genre}</td>
+                    <button className ='delete-button' onClick={() => props.deleteSongProp(song)}>Delete</button>
                 </tr>
             )
             })}

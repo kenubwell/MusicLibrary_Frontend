@@ -1,0 +1,32 @@
+.song-footer {
+  background-color: black;
+  color: white;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.copy-right {
+  margin-right: auto;
+  padding-left: 2rem;
+}
+
+.copy-color {
+  font-weight: bold;
+  color: darkturquoise;
+}
+
+.footer-ref {
+  font-weight: bold;
+  font-size: 18px;
+  color: darkturquoise;
+  text-decoration: none;
+}
+
+.footer-list {
+  list-style: none;
+  display: inline-block;
+  padding: 0px 30px;
+}

@@ -1,6 +1,6 @@
 .display-container {
   display: flex;
-  max-width: 1350px;
+  max-width: 1375px;
   margin: auto;
   flex-direction: column;
 }
