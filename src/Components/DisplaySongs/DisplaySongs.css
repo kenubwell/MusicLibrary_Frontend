@@ -61,3 +61,11 @@ th {
 .display-rows td {
   border: 1px solid;
 }
+
+.delete-button {
+  border: solid darkturquoise;
+  background-color: darkturquoise;
+  font-weight: bold;
+  border-radius: 10px;
+  margin-left: 1.8rem;
+}
