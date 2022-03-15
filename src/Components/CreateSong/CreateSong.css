@@ -1,0 +1,44 @@
+.create-container {
+  display: flex;
+  max-width: 1350px;
+  margin: auto;
+  flex-direction: column;
+  border: solid;
+  border-radius: 20px;
+  background-color: black;
+}
+
+.addSong-title {
+  margin-top: 1rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  margin-left: 18rem;
+}
+
+.form-contain {
+  display: flex;
+  padding-top: 1.5rem;
+}
+
+.form-label {
+  font-weight: bold;
+  padding-left: 0.7rem;
+  padding-right: 0.3rem;
+  font-size: large;
+  color: darkturquoise;
+}
+
+.button-contain {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 1rem;
+  padding-bottom: 0.8rem;
+  padding-top: 0.5rem;
+}
+
+.add-button {
+  border: solid darkturquoise;
+  background-color: darkturquoise;
+  font-weight: bold;
+  border-radius: 10px;
+}
