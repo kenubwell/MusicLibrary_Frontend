@@ -62,10 +62,14 @@ th {
   border: 1px solid;
 }
 
+.dbutton-contain {
+  display: flex;
+  justify-content: center;
+}
+
 .delete-button {
-  border: solid darkturquoise;
+  border: 2px solid;
   background-color: darkturquoise;
   font-weight: bold;
   border-radius: 10px;
-  margin-left: 1.8rem;
 }
